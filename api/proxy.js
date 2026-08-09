@@ -54,7 +54,7 @@ module.exports = async function handler(request, response) {
       headers: {
         Accept: request.headers.accept || 'application/json',
         'Content-Type': contentType,
-        'User-Agent': 'PerceelChecker/5.0 (github.com/pieterdsmt/perceelchecker)',
+        'User-Agent': 'PerceelChecker/5.0 (github.com/pieterdsmt/perceelchecker-public)',
       },
       body: request.method === 'POST' ? getRequestBody(request) : undefined,
       signal: AbortSignal.timeout(20000),

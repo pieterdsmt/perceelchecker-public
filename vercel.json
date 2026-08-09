@@ -1,6 +1,12 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/api/proxy/:route*",
+      "destination": "/api/proxy?route=:route*"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
