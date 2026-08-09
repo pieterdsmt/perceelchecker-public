@@ -1,0 +1,13 @@
+{
+  "name": "perceelchecker",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "check": "node --check assets/js/app.js && node --check api/proxy/[...route].js",
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "devDependencies": {
+    "vercel": "latest"
+  }
+}

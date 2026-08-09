@@ -1,0 +1,8 @@
+.vercel/
+node_modules/
+*.log
+__pycache__/
+*.pyc
+abw-debug.png
+.DS_Store
+Thumbs.db
